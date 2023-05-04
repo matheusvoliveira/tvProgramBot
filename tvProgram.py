@@ -22,6 +22,7 @@ def custom_command(update, context):
     update.message.reply_text('This is a custom command!')
 
 def handle_response(text: str) -> str:
+
     split = text.split()
     search_term = ''
     for i in range(1, len(split)):
