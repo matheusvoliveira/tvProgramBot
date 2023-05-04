@@ -68,7 +68,7 @@ def handle_message(update, context):
 
     if message_type == 'group':
         if '@mrxangbot' in text:
-            new_text = text.replacec('@mrxangbot', '').strip()
+            new_text = text.replacec('@searchProgramBot', '').strip()
             response = handle_response(new_text)
     else:
         response = handle_response(text)
